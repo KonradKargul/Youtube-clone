@@ -1,0 +1,159 @@
+#layout {
+  padding: 10px 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px ,1fr));
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.video {
+  min-width: 310px;
+  max-width: 470px;
+  width: 100%;
+
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.video img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0;
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+}
+
+.video-thumbnail-timer {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.video-description {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  display: flex;
+  align-items: start;
+}
+
+.video-description-channel-icon {
+  position: relative;
+  vertical-align: top;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.video-description-channel-icon:hover .video-description-channel-icon-tooltip {
+  opacity: 1;
+}
+
+.video-description-channel-icon .video-description-channel-icon-tooltip {
+  position: absolute;
+  bottom: -70px;
+  left: 30px;
+  width: 285px;
+  height: 80  px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 10px;
+  pointer-events: none;
+  padding: 4px;
+
+  box-sizing: border-box;
+  display: flex;
+  opacity: 0;
+}
+
+.video-description-channel-icon-tooltip-image {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 3px;
+  width: 50px;
+}
+
+.video-description-channel-icon-tooltip-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.video-description-channel-icon-tooltip-description-title, .video-description-channel-icon-tooltip-description-stats {
+  font-family: Roboto, Arial;
+  margin: 0;
+}
+
+.video-description-channel-icon-tooltip-description-title {
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.video-description-channel-icon-tooltip-description-stats {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.video-description-channel-icon-tooltip-description-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  width: 80px;
+  margin-top: 6px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  padding: 2px 4px;
+}
+
+.video-description-channel-icon img {
+  width: 40px;
+  border-radius: 100%;
+}
+
+.video-description-information {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.information-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.information-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.information-views-age, .information-channel-name {
+  font-size: 14px;
+  color: rgb(92, 92, 92);
+}
+
+.information-channel-name {
+  margin-top: 10px;
+}
+
+
+.information-views-age {
+  margin-top: 2px;
+}
+

@@ -1,0 +1,158 @@
+#header {
+    height: 50px;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background-color: white;
+
+    z-index: 100;
+}
+
+.section-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hamburger-menu {
+    height: 24px;
+}
+
+.youtube-icon {
+    height: 20px;
+    margin-left: 20px;
+}
+
+.section-middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    flex: 1;
+
+    min-width: 0;
+    max-width: 600px;
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+@media (max-width: 600px) {
+    .section-middle {
+        display: none;
+    }
+}
+
+#searchBar {
+    border-radius: 40px 0 0 40px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(212, 212, 212);
+    height: 40px;
+    padding: 0 10px;
+    flex: 1;
+    box-sizing: border-box;
+    width: 0;
+}
+
+#searchBar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+#searchBar:focus {
+    outline: none;
+}
+
+.btn-search, .btn-mic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(248, 248, 248);
+    border: solid 0.5px rgb(221, 220, 220);
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.btn-search {
+    margin-left: -5px;
+    border-radius: 0 100% 100% 0;
+}
+
+.btn-search .tooltip, .btn-mic .tooltip, .section-right div .tooltip {
+    position: absolute;
+    bottom: -25px;
+    background-color: lightgray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-search:hover .tooltip, .btn-mic:hover .tooltip, .section-right:hover div .tooltip {
+    opacity: 1;
+}
+
+.search-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.btn-mic {
+    margin-left: 5px;
+    border-radius: 100%;
+}
+
+
+.mic-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.section-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.section-right div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.section-right-camera {
+    height: 30px;
+}
+
+.section-right-avatar {
+    height: 40px;
+    border-radius: 100%;
+    margin-left: 15px;
+}
+
+.btn-mic:hover , .btn-search:hover , .section-right div:hover {
+    background-color: rgb(245, 245, 245);
+}

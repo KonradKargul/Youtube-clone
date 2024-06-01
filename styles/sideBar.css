@@ -1,0 +1,129 @@
+#sideBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 60px;
+    width: 240px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+#sideBar::-webkit-scrollbar {
+    width: 0px;
+}
+
+#sideBar:hover {
+    scrollbar-width: thin;
+}
+
+#sideBar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.sideBar-link, .first-section {
+    background-color: aliceblue;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.sideBar-link:hover, .first-section:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.sideBar-link img {
+    width: 25px;
+}
+
+.sideBar-link div {
+    display: flex;
+    font-family: Roboto, Arial;
+    font-size: 15px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section div{
+    font-weight: 600;
+    font-family: Roboto, Arial;
+}
+
+.first-section img {
+    margin-left: 5px;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 0.5px lightgray;
+}
+
+.box2 {
+    margin-top: 10px;
+}
+
+
+.box3 img {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.box3 p {
+    margin: 0;
+}
+
+.sideBar-link div img {
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+}
+
+
+.blue-dot {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(6, 95, 212);
+    border-radius: 100%;
+}
+
+.section-title {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.box6 div {
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    justify-content: left;
+    align-items: center;
+}
+
+.box6 div p {
+    margin: 1px 5px;
+    font-size: 13px;
+    font-weight: 500;
+    
+}
+
+.box6 div span {
+    font-family: Roboto, Arial;
+    font-size: 13px;
+    color: rgb(144, 144, 144);
+    margin-left: 5px;
+}
